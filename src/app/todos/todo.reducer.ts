@@ -40,7 +40,8 @@ const _todoReducer = createReducer<Todo[], Action>(initialState,
       ...todo,
       done: props.toggle
     } as Todo;
-  }))
+  })),
+  on(actions.clearCompleted, state => state.filter(todo => !todo.done))
 );
 
 export function todoReducer(state, action) {
