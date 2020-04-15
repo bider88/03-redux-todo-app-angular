@@ -6,6 +6,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+## Build prod to Git Hub Pages
+
+Run:
+```
+$ ng build --prod --output-path docs --base-href="https://bider88.github.io/03-redux-todo-app-angular/"
+```
+
 ## Main dependencies
 ```
 $ npm install @ngrx/store --save
